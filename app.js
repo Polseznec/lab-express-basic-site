@@ -16,6 +16,7 @@ app.get("/", (request, reponse, next) =>{
 
 app.get("/about", (request,reponse,next) =>{
     reponse.render("about.hbs");
+    
 });
 
 app.get ("/achievement", (request, reponse, next) => {

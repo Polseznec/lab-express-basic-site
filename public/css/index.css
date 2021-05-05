@@ -1,6 +1,24 @@
 @import url("./reset.css");
 
 h1{
+    border: solid black 1px;
     text-align: center;
     color: black;
+}
+
+
+.imgTextalign{
+    display: flex;
+    max-height: 30%;
+    max-height: 30%;
+}
+.textBox{
+    border: solid black 1px;
+    text-align: center;
+    padding: auto;
+    /* margin: auto; */
+}
+.textBox h2{
+    text-decoration: overline;
+    text-transform: uppercase;
 }

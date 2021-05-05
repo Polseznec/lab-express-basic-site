@@ -1,9 +1,11 @@
-*{
+*:not(.followBox){
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -12,8 +14,25 @@ nav{
     width: auto;
     height: 4em;
     background: linear-gradient( red, blue, white);
+    
 }
-
+.followBox{
+    position: fixed;
+    padding: 50px;
+    border: solid rgb(71, 68, 68) 2px;
+    border-radius: 0.3em;
+    text-align:center;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 0;
+    margin-right: 75%;
+    height: auto;
+    padding: 5%;
+    background-color: yellow;
+    background-image: url(/assets/img/vladirmir-sexual.jpeg);
+    background-size: 100%;  
+    background-repeat: no-repeat; 
+}
 a{
     display: flex;
     color: inherit;
@@ -23,11 +42,31 @@ a{
     border-radius: 0.8em;
     border: solid black 1px;
 }
+.boxFlag{
+    background: linear-gradient( white, blue, red);
+}
+img{
+    /* width: 100%; */
+    max-width: 50%;
+    /* height: 100%; */
+    max-height: 50%;
+    /* align-items: center; */
+    image-rendering: auto;
+    border: solid black 1px;
+}
 
 footer{
-    text-align: end;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    border-top: solid 1px black;
+}
+footer div{
+    text-align: start;
+    margin: 1em;  
    
 }
+footer div:nth-last-child(1){
+    text-align: end;
+    margin: 1em;
+    bottom: 0;
+    right: 0;
+}
+
